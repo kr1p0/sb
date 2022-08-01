@@ -1,4 +1,19 @@
-﻿namespace ConsoleApp
+﻿
+/* Komentarze
+#Linia16  Tworzenie oraz dodawanie do listy ImportedObjects instacji klasy ImportedObject mija się z celem. 
+#Linia27 W pętli for należy dodać warunek sprawdzający czy lista values posiada wartość na danym indeksie. 
+    Również warto rozpocząć pętlę od licznika =1, jako ,że pierwszy element to nazwy kolumn tabeli. 
+#Także zamiast znaku <= należy zostosować < bądź skrócić listę importedLines - 1;
+#Linia43 W pętli foreach, zbedne jest stosowanie metody Replace(), jako ,iż metoda trim obejmuje usuwanie spacji oraz nowych linii. 
+#Linia55 Tworzenie tablicy importedObject jest zbędne jeśli zastosować metodę ElementAt() do listy która jest iterowana.
+#Linia62 Możliwe jest skrócenie wyrażeniem +=1
+#Linia70 Warto rozważyć zastosowanie metody ToUpper przy wszystkich porównianiach pól. Kewstia czy zapis małymi bądź dużymi literami jest celowy czy jest wynikiem błędu. 
+Klasę bazową warto zadeklarować jako klasę abstrakcyjną bądź interfejs. Rozważyc również stosowanie wlascicowsci dla wszystkich pól klasy.
+Pole NumberOfChildren zawierać będzie jedynie liczby całkowite więc należy zadeklarować jako int bądź long. 
+*/
+
+
+namespace ConsoleApp
 {
     using System;
     using System.Collections.Generic;
